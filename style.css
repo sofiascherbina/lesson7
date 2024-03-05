@@ -1,0 +1,23 @@
+:root{--first-color:#2F303A;} 
+:root{--main-a-color: #FFFFFF; }
+.main-section{
+    background-color: var(--first-color);
+    color: var(--main-a-color);
+}
+.team-bg{
+    background-color: #F5F4FA;
+}
+footer{
+    background-color: var(--first-color);
+    color: var(--main-a-color);
+}
+.main-button{
+    background-color: #2196F3;
+    color: var(--main-a-color);
+}
+header a{
+    color:black;
+}
+footer a{
+    color: var(--main-a-color);
+}
