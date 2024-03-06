@@ -1,5 +1,4 @@
-:root{--first-color:#2F303A;} 
-:root{--main-a-color: #FFFFFF; }
+:root{--first-color:#2F303A; --main-a-color: #FFFFFF;} 
 .main-section{
     background-color: var(--first-color);
     color: var(--main-a-color);
