@@ -1,0 +1,19 @@
+#greycol{
+    color: grey;
+}
+.yellow{
+    color: yellow !important;
+}
+ .text-box div p{
+    color: red;
+ }
+ #greycol~p{
+    color: green;
+ }
+ h3{
+    color: pink;
+ }
+#greycol~h3{
+    color: black;
+}
+ 
