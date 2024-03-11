@@ -1,18 +1,15 @@
 #greycol{
     color: grey;
 }
-.yellow{
-    color: yellow !important;
+.text-box h3:first-of-type{
+    color:pink;
 }
- .text-box div p{
+ .text-box > div > p{
     color: red;
  }
- #greycol~p{
-    color: green;
+ .text-box p:nth-of-type(3){
+    color:green;
  }
- h3{
-    color: pink;
+ .yellow{
+    color: yellow;
  }
-#greycol~h3{
-    color: black;
-}
