@@ -1,4 +1,4 @@
-:root{--first-color:#2F303A; --main-a-color: #FFFFFF;} 
+:root{--first-color:#2F303A; --main-a-color: #FFFFFF; --p-color: #757575;} 
 .main-section{
     background-color: var(--first-color);
     color: var(--main-a-color);
@@ -13,10 +13,74 @@ footer{
 .main-button{
     background-color: #2196F3;
     color: var(--main-a-color);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
 }
 header a{
     color:black;
 }
 footer a{
     color: var(--main-a-color);
+}
+a{
+    font-family: 'Roboto';
+    font-weight: medium;
+    font-size: 14px;
+}
+.webstudio{
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 26px;
+}
+h1{
+    font-family: 'Roboto';
+    font-size: 44;
+    font-weight: black;
+}
+ul{
+    font-family: 'Roboto';
+    list-style-type: none;
+}
+h4{
+    font-weight: bold;
+    font-size: 14px;
+}
+.features p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--p-color);
+}
+h3{
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: bold;
+}
+.team{
+    font-family: 'Roboto';
+}
+.team h5{
+    font-size: 16px;
+    font-weight: medium;
+}
+.team p{
+    font-size: 16px;
+    font-weight: 400; 
+    color: var(--p-color);
+}
+.nav{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: medium;
+}
+.projects h5{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+}
+.projects a{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--p-color);
 }
