@@ -1,69 +1,71 @@
-:root{--first-color:#2F303A; --main-a-color: #FFFFFF; --p-color: #757575;} 
-.main-section{
-    background-color: var(--first-color);
-    color: var(--main-a-color);
-}
-.team-bg{
-    background-color: #F5F4FA;
-}
-footer{
-    background-color: var(--first-color);
-    color: var(--main-a-color);
-}
-.main-button{
-    background-color: #2196F3;
-    color: var(--main-a-color);
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: bold;
-}
-header a{
-    color:black;
-}
-footer a{
-    color: var(--main-a-color);
-}
-a{
-    font-family: 'Roboto';
-    font-weight: medium;
-    font-size: 14px;
-}
-.webstudio{
+:root{
+    --first-color:#2F303A; 
+    --white: #FFFFFF; 
+    --grey-text: #757575;
+    --dark-text:#212121;
+    --hover:#2196F3;
+} 
+.logo{
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 26px;
+    color: #000000;
 }
-h1{
+ul{
+    list-style-type: none;
+}
+.navigation{
     font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: medium;
+    color: var(--dark-text);
+}
+.navigation:hover{
+    color: var(--hover);
+} 
+
+.main-section{
+    font-family: 'Roboto';
+    background-color: var(--first-color);
+}
+.solution{
+    color: var(--white);
     font-size: 44;
     font-weight: black;
 }
-ul{
-    font-family: 'Roboto';
-    list-style-type: none;
+.main-button{
+    background-color: var(--hover);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
 }
-h4{
+.features h4{
     font-weight: bold;
     font-size: 14px;
 }
 .features p{
     font-size: 14px;
     font-weight: 400;
-    color: var(--p-color);
+    color: var(--grey-text);
 }
-h3{
+.main-h2{
     font-family: 'Roboto';
     font-size: 36px;
     font-weight: bold;
+    color: var(--dark-text);
 }
 .team{
     font-family: 'Roboto';
+    background-color: #F5F4FA;
 }
-.team h5{
+.team-member{
+    background-color: var(--white);
+}
+.team-member h5{
     font-size: 16px;
     font-weight: medium;
 }
-.team p{
+.team-member p{
     font-size: 16px;
     font-weight: 400; 
     color: var(--p-color);
@@ -72,6 +74,16 @@ h3{
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: medium;
+    color: var(--dark-text);
+    background-color: #F5F4FA;
+    border-color: #F5F4FA;
+}
+.nav:hover{
+    color: var(--white);
+    background-color: var(--hover);
+}
+.project-el{
+    background-color: var(--white);
 }
 .projects h5{
     font-family: 'Roboto';
@@ -82,5 +94,15 @@ h3{
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
-    color: var(--p-color);
+    color: var(--grey-text);
+}
+footer{
+    background-color: var(--first-color);
+    color: var(--white);
+}
+footer .navigation{
+    color: var(--white);
+}
+footer .logo , p{
+    color: var(--white);
 }
