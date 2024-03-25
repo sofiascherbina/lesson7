@@ -14,13 +14,13 @@
 ul{
     list-style-type: none;
 }
-.navigation{
+.navigation-el{
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: medium;
     color: var(--dark-text);
 }
-.navigation:hover{
+.navigation-el:hover{
     color: var(--hover);
 } 
 
@@ -70,7 +70,7 @@ ul{
     font-weight: 400; 
     color: var(--p-color);
 }
-.nav{
+.topic-el{
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: medium;
@@ -78,7 +78,7 @@ ul{
     background-color: #F5F4FA;
     border-color: #F5F4FA;
 }
-.nav:hover{
+.topic-el:hover{
     color: var(--white);
     background-color: var(--hover);
 }
@@ -100,7 +100,7 @@ footer{
     background-color: var(--first-color);
     color: var(--white);
 }
-footer .navigation{
+footer .navigation-el{
     color: var(--white);
 }
 footer .logo , p{
