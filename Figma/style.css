@@ -27,17 +27,23 @@ ul{
 .main-section{
     font-family: 'Roboto';
     background-color: var(--first-color);
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 .solution{
     color: var(--white);
     font-size: 44;
     font-weight: black;
+    text-align: center; 
 }
 .main-button{
     background-color: var(--hover);
     color: var(--white);
+    border-color: var(--hover);
+    border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
+    padding: 10px 30px;
 }
 .features h4{
     font-weight: bold;
@@ -53,6 +59,11 @@ ul{
     font-size: 36px;
     font-weight: bold;
     color: var(--dark-text);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.activities{
+    margin-bottom: 95px;
 }
 .team{
     font-family: 'Roboto';
@@ -84,6 +95,7 @@ ul{
 }
 .project-el{
     background-color: var(--white);
+    margin-bottom: 30px;
 }
 .projects h5{
     font-family: 'Roboto';
@@ -99,9 +111,10 @@ ul{
 footer{
     background-color: var(--first-color);
     color: var(--white);
+    padding-left: 215px;
 }
 footer .navigation-el{
-    color: var(--white);
+    color: var(--white);  
 }
 footer .logo , p{
     color: var(--white);
