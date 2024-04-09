@@ -5,11 +5,19 @@
     --dark-text:#212121;
     --hover:#2196F3;
 } 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .logo{
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 26px;
     color: #000000;
+}
+a{
+    text-decoration: none;
 }
 ul{
     list-style-type: none;
@@ -23,7 +31,9 @@ ul{
 .navigation-el:hover{
     color: var(--hover);
 } 
-
+.navigation-li{
+    display: inline;
+}
 .main-section{
     font-family: 'Roboto';
     background-color: var(--first-color);
@@ -41,9 +51,15 @@ ul{
     color: var(--white);
     border-color: var(--hover);
     border-radius: 5px;
+    border: none;
     font-size: 16px;
     font-weight: bold;
     padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+}
+.container-feature{
+    width: 270px;
 }
 .features h4{
     font-weight: bold;
@@ -63,14 +79,23 @@ ul{
     margin-bottom: 50px;
 }
 .activities{
-    margin-bottom: 95px;
+    width: 370px;
+    height: 294px;
+    display:inline;
 }
 .team{
     font-family: 'Roboto';
     background-color: #F5F4FA;
+    padding: 100px 0;
 }
-.team-member{
+.team-container{
+    width: 270px;
+    height: 370px;
     background-color: var(--white);
+}
+.member-img{
+    width: 270px;
+    height: 260px;
 }
 .team-member h5{
     font-size: 16px;
@@ -79,7 +104,7 @@ ul{
 .team-member p{
     font-size: 16px;
     font-weight: 400; 
-    color: var(--p-color);
+    color: var(--grey-text);
 }
 .topic-el{
     font-family: 'Roboto';
@@ -88,14 +113,29 @@ ul{
     color: var(--dark-text);
     background-color: #F5F4FA;
     border-color: #F5F4FA;
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: none;
 }
 .topic-el:hover{
     color: var(--white);
     background-color: var(--hover);
 }
+.topic-li{
+    display: inline;
+}
+.project-container{
+    width: 370px;
+    height: 404px;
+    display: inline;
+}
 .project-el{
     background-color: var(--white);
     margin-bottom: 30px;
+}
+.project-img{
+    width: 370px;
+    height: 294px;
 }
 .projects h5{
     font-family: 'Roboto';
@@ -111,7 +151,6 @@ ul{
 footer{
     background-color: var(--first-color);
     color: var(--white);
-    padding-left: 215px;
 }
 footer .navigation-el{
     color: var(--white);  
