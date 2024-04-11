@@ -22,6 +22,9 @@ a{
 ul{
     list-style-type: none;
 }
+.navigation{
+    display: flex;
+}
 .navigation-el{
     font-family: 'Roboto';
     font-size: 14px;
@@ -31,9 +34,6 @@ ul{
 .navigation-el:hover{
     color: var(--hover);
 } 
-.navigation-li{
-    display: inline;
-}
 .main-section{
     font-family: 'Roboto';
     background-color: var(--first-color);
@@ -58,6 +58,10 @@ ul{
     display: block;
     margin: 0 auto;
 }
+.features{
+    display: flex;
+    justify-content: space-between;
+}
 .container-feature{
     width: 270px;
 }
@@ -79,14 +83,21 @@ ul{
     margin-bottom: 50px;
 }
 .activities{
+    display:flex;
+    justify-content: space-between;
+}
+.activities-it{
     width: 370px;
     height: 294px;
-    display:inline;
 }
 .team{
     font-family: 'Roboto';
     background-color: #F5F4FA;
     padding: 100px 0;
+}
+.team-members{
+    display: flex;
+    justify-content: space-between;
 }
 .team-container{
     width: 270px;
@@ -97,14 +108,23 @@ ul{
     width: 270px;
     height: 260px;
 }
-.team-member h5{
+.team-members h5{
     font-size: 16px;
     font-weight: medium;
+    text-align: center;
+    line-height: 10px;
 }
-.team-member p{
+.team-members p{
     font-size: 16px;
     font-weight: 400; 
     color: var(--grey-text);
+    text-align: center;
+}
+
+/* portfolio */
+
+.topic{
+    display: flex;
 }
 .topic-el{
     font-family: 'Roboto';
@@ -121,13 +141,15 @@ ul{
     color: var(--white);
     background-color: var(--hover);
 }
-.topic-li{
-    display: inline;
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .project-container{
     width: 370px;
     height: 404px;
-    display: inline;
+    border:20px #000000 ;
 }
 .project-el{
     background-color: var(--white);
