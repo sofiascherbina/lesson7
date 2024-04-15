@@ -22,12 +22,18 @@ a{
 ul{
     list-style-type: none;
 }
-.header-ul{
+.header-items{
     display: flex;
     align-items: baseline;
 }
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 95px;
+}
 .navigation{
     display: flex;
+    gap: 50px;
 }
 .navigation-el{
     font-family: 'Roboto';
@@ -38,11 +44,11 @@ ul{
 .navigation-el:hover{
     color: var(--hover);
 } 
-.main-section{
+.article{
     font-family: 'Roboto';
     background-color: var(--first-color);
+    height: 600px;
     padding-top: 200px;
-    padding-bottom: 280px;
 }
 .solution{
     color: var(--white);
@@ -53,18 +59,20 @@ ul{
 .main-button{
     background-color: var(--hover);
     color: var(--white);
-    border-color: var(--hover);
+    border: none;
     border-radius: 5px;
     border: none;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 12px 30px;
     display: block;
     margin: 0 auto;
 }
 .features{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    /* justify-content: space-between; */
+    margin: 100px 0;
 }
 .container-feature{
     width: 270px;
@@ -88,7 +96,8 @@ ul{
 }
 .activities{
     display:flex;
-    justify-content: space-between;
+    gap: 30px;
+    /* justify-content: space-between; */
 }
 .activities-it{
     width: 370px;
@@ -97,11 +106,13 @@ ul{
 .team{
     font-family: 'Roboto';
     background-color: #F5F4FA;
-    padding: 100px 0;
+    margin-top: 90px;
+    padding: 95px 0;
 }
 .team-members{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    /* justify-content: space-around; */
 }
 .team-container{
     width: 270px;
@@ -177,10 +188,14 @@ ul{
 footer{
     background-color: var(--first-color);
     color: var(--white);
+    padding: 60px 0;
+}
+.adress{
+     line-height: 20px; 
 }
 footer .navigation-el{
-    color: var(--white);  
+    color: var(--white); 
 }
-footer .logo , p{
+footer .logo{
     color: var(--white);
 }
