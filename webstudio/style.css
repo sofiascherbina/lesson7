@@ -12,7 +12,7 @@
 }
 .logo{
     font-family: 'Raleway';
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     color: #000000;
 }
@@ -21,17 +21,22 @@ a{
 }
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .header-items{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
+    margin: 24px 0;
 }
 .nav-ul{
-    display: flex;
-    justify-content: space-between;
+    display: flex;  
+    justify-content:space-between;
     margin-left: 95px;
+    width: 933px;
 }
-.navigation{
+.navigation , .header-address{
     display: flex;
     gap: 50px;
 }
@@ -41,7 +46,13 @@ ul{
     font-weight: medium;
     color: var(--dark-text);
 }
-.navigation-el:hover{
+.address-el{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: medium;
+    color: var(--grey-text)
+}
+.navigation-el:hover , .address-el:hover{
     color: var(--hover);
 } 
 .article{
@@ -52,44 +63,46 @@ ul{
 }
 .solution{
     color: var(--white);
-    font-size: 44;
-    font-weight: black;
+    font-size: 44px;
+    font-weight: 900;
     text-align: center; 
 }
 .main-button{
     background-color: var(--hover);
     color: var(--white);
+    font-size: 16px;
+    font-weight: 700; 
     border: none;
     border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
     padding: 12px 30px;
     display: block;
     margin: 0 auto;
 }
 .features{
+    font-family: 'Roboto';
     display: flex;
     gap: 30px;
-    /* justify-content: space-between; */
     margin: 100px 0;
 }
 .container-feature{
     width: 270px;
+    height: 72px;
 }
 .features h4{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
+    color: var(--dark-text);
 }
 .features p{
     font-size: 14px;
     font-weight: 400;
     color: var(--grey-text);
+    line-height: 20px;
 }
 .main-h2{
     font-family: 'Roboto';
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--dark-text);
     text-align: center;
     margin-bottom: 50px;
@@ -97,7 +110,6 @@ ul{
 .activities{
     display:flex;
     gap: 30px;
-    /* justify-content: space-between; */
 }
 .activities-it{
     width: 370px;
@@ -112,7 +124,6 @@ ul{
 .team-members{
     display: flex;
     gap: 30px;
-    /* justify-content: space-around; */
 }
 .team-container{
     width: 270px;
@@ -125,7 +136,7 @@ ul{
 }
 .team-members h5{
     font-size: 16px;
-    font-weight: medium;
+    font-weight: 500;
     text-align: center;
     line-height: 10px;
 }
@@ -190,12 +201,9 @@ footer{
     color: var(--white);
     padding: 60px 0;
 }
-.adress{
-     line-height: 20px; 
+.address{ 
+     margin-top: 24px;
 }
-footer .navigation-el{
-    color: var(--white); 
-}
-footer .logo{
+footer .navigation-el , footer .logo{
     color: var(--white);
 }
