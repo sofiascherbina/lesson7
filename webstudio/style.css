@@ -16,13 +16,16 @@
     font-size: 26px;
     color: #000000;
 }
+span{
+    color: var(--hover);
+}
 a{
     text-decoration: none;
 }
 ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-inline-start: 0;
 }
 .header-items{
     display: flex;
@@ -151,6 +154,10 @@ ul{
 
 .topic{
     display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 105px;
+    margin-bottom: 50px;
 }
 .topic-el{
     font-family: 'Roboto';
@@ -162,39 +169,41 @@ ul{
     padding: 10px 25px;
     border-radius: 4px;
     border: none;
+   
 }
 .topic-el:hover{
     color: var(--white);
     background-color: var(--hover);
+    box-shadow:1px 3px 10px var(--grey-text);
 }
 .projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 85px;
 }
 .project-container{
-    width: 370px;
     height: 404px;
-    border:20px #000000 ;
-}
-.project-el{
     background-color: var(--white);
     margin-bottom: 30px;
+    width: calc( (100%-60px) /3);
+    line-height: 5px;
 }
 .project-img{
-    width: 370px;
     height: 294px;
 }
 .projects h5{
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: bold;
+    padding-left: 24px;
 }
 .projects p{
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
     color: var(--grey-text);
+    padding-left: 24px;
 }
 footer{
     background-color: var(--first-color);
