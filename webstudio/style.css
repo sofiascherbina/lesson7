@@ -46,13 +46,13 @@ ul{
 .navigation-el{
     font-family: 'Roboto';
     font-size: 14px;
-    font-weight: medium;
+    font-weight: 500;
     color: var(--dark-text);
 }
 .address-el{
     font-family: 'Roboto';
     font-size: 14px;
-    font-weight: medium;
+    font-weight: 500;
     color: var(--grey-text)
 }
 .navigation-el:hover , .address-el:hover{
@@ -162,7 +162,7 @@ ul{
 .topic-el{
     font-family: 'Roboto';
     font-size: 16px;
-    font-weight: medium;
+    font-weight: 500;
     color: var(--dark-text);
     background-color: #F5F4FA;
     border-color: #F5F4FA;
@@ -181,6 +181,7 @@ ul{
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 85px;
+    background-color: #2196F3;
 }
 .project-container{
     height: 404px;
