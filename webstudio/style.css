@@ -16,7 +16,7 @@
     font-size: 26px;
     color: #000000;
 }
-span{
+.decorative-web{
     color: var(--hover);
 }
 a{
@@ -181,7 +181,6 @@ ul{
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 85px;
-    background-color: #2196F3;
 }
 .project-container{
     height: 404px;
@@ -196,7 +195,7 @@ ul{
 .projects h5{
     font-family: 'Roboto';
     font-size: 18px;
-    font-weight: bold;
+    font-weight:700;
     padding-left: 24px;
 }
 .projects p{
