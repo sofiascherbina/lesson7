@@ -4,7 +4,11 @@
     --grey-text: #757575;
     --dark-text:#212121;
     --hover:#2196F3;
+    --soft-background:#F5F4FA;
 } 
+body{
+    box-sizing: border-box;
+}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -83,13 +87,39 @@ ul{
 }
 .features{
     font-family: 'Roboto';
-    display: flex;
+    display: inline-flex;
     gap: 30px;
-    margin: 100px 0;
+    margin-top: 95px;
+    height: 284px;
 }
-.container-feature{
-    width: 270px;
+.features-li{
+    width: calc((100% - 60px) /4);
     height: 72px;
+}
+.features-li::before{
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 3px;
+    background-size: contain;
+    background-color:var(--soft-background);
+    background-position: top;     
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+}
+.features-li:first-child::before{
+    background-image: url(./img/antenna\ 1.png);
+}
+.features-li:last-child::before{
+    background-image: url(./img/astronaut\ 1.png);
+}
+.features-li:nth-child(2)::before{
+    background-image: url(./img/clock\ 1.png);
+}
+.features-li:nth-child(3)::before{
+    background-image: url(./img/diagram\ 1.png);
 }
 .features h4{
     font-weight: 700;
@@ -115,12 +145,11 @@ ul{
     gap: 30px;
 }
 .activities-it{
-    width: 370px;
-    height: 294px;
+    width: calc((100% - 60px) /3);
 }
 .team{
     font-family: 'Roboto';
-    background-color: #F5F4FA;
+    background-color: var(--soft-background);
     margin-top: 90px;
     padding: 95px 0;
 }
@@ -132,10 +161,7 @@ ul{
     width: 270px;
     height: 370px;
     background-color: var(--white);
-}
-.member-img{
-    width: 270px;
-    height: 260px;
+    width: calc((100% - 60px) /3);
 }
 .team-members h5{
     font-size: 16px;
