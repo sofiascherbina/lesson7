@@ -95,6 +95,7 @@ ul{
 .features-li{
     width: calc((100% - 60px) /4);
     height: 72px;
+    line-height: 16px;
 }
 .features-li::before{
     display: block;
