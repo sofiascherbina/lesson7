@@ -35,7 +35,7 @@ ul{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin: 24px 0;
+    margin: 30px 0;
 }
 .nav-ul{
     display: flex;  
@@ -71,6 +71,7 @@ ul{
     url(./img/hero-background.png);
     height: 600px;
     padding-top: 200px;
+    background-size: cover;
 }
 .solution{
     color: var(--white);
