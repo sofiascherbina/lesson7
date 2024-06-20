@@ -115,16 +115,16 @@ ul{
     background-position: center;
 }
 .features-li:first-child::before{
-    background-image: url(./img/antenna\ 1.svg);
+    background-image: url(./img/antenna.svg);
 }
 .features-li:last-child::before{
-    background-image: url(./img/astronaut\ 1.svg);
+    background-image: url(./img/astronaut.svg);
 }
 .features-li:nth-child(2)::before{
-    background-image: url(./img/clock\ 1.svg);
+    background-image: url(./img/clock.svg);
 }
 .features-li:nth-child(3)::before{
-    background-image: url(./img/diagram\ 1.svg);
+    background-image: url(./img/diagram.svg);
 }
 .features h4{
     font-weight: 700;
