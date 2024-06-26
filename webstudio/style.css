@@ -5,6 +5,7 @@
     --dark-text:#212121;
     --hover:#2196F3;
     --soft-background:#F5F4FA;
+    --svg-color: #AFB1B8;
 } 
 body{
     box-sizing: border-box;
@@ -196,7 +197,7 @@ ul{
 .social-links-li{
     width: 20px;
     height: 20px;
-    fill: #AFB1B8; 
+    fill: var(--svg-color); 
 }
 
 /* portfolio */
