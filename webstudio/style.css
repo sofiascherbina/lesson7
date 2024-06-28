@@ -63,6 +63,14 @@ ul{
 .navigation-el:hover , .address-el:hover{
     color: var(--hover);
 } 
+.address-svg{
+    vertical-align: middle;
+    fill: var(--grey-text);
+    margin-right: 10px;
+}
+.address-svg:hover{
+    fill: var(--hover);
+}
 .hero{
     font-family: 'Roboto';
     background-image:linear-gradient( 
@@ -190,16 +198,37 @@ ul{
 }
 .social-links{
     display: flex;
-    gap: 34px;
-    padding: 20px 44px 30px;
+    gap: 10px;
+    padding: 15px 32px 30px;
     background-color: var(--white);
+}
+.social-links > li{
+    height: 44px;
+    width: 44px;
+    position: relative;
+}
+.social-links > li:hover{
+    background-image: url(./img/Ellipse.svg);
 }
 .social-links-li{
     width: 20px;
     height: 20px;
     fill: var(--svg-color); 
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
 }
-
+.social-links-li:hover{
+    fill: var(--white);  
+}
+/* .ellipse{
+    width: 44px;
+    height: 44px;
+    fill: var(--white);
+} */
+/* .ellipse:hover{
+    fill: var(--hover);
+} */
 /* portfolio */
 
 .topic{
