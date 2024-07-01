@@ -205,30 +205,55 @@ ul{
 .social-links > li{
     height: 44px;
     width: 44px;
-    position: relative;
+    border-radius: 30px;
 }
 .social-links > li:hover{
-    background-image: url(./img/Ellipse.svg);
+   background-color: var(--hover);
 }
-.social-links-li{
+.social-links-el{
+    display: block;
     width: 20px;
     height: 20px;
     fill: var(--svg-color); 
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
+    margin: 12px auto;
 }
-.social-links-li:hover{
+.social-links-el:hover{
     fill: var(--white);  
 }
-/* .ellipse{
-    width: 44px;
-    height: 44px;
-    fill: var(--white);
-} */
-/* .ellipse:hover{
+.customers{
+    padding: 95px 0px;
+}
+.customers > p{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--dark-text);
+    margin: 0px;
+    text-align: center;
+}
+.customers-ul{
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+.customers-li{
+    width: 170px;
+    height: 92px;
+    border: solid 2px var(--svg-color);
+    border-radius: 5px;
+}
+.customers-li:hover{
+    border-color: var(--hover);
+    cursor: pointer;
+}
+.customers-icons{
+    display: block;
+    margin: 20px auto;
+    fill: var(--svg-color);
+}
+.customers-icons:hover{
     fill: var(--hover);
-} */
+}
 /* portfolio */
 
 .topic{
@@ -304,3 +329,27 @@ footer{
 footer .navigation-el , footer .logo{
     color: var(--white);
 }
+footer > .container{
+    display: flex;
+    gap: 70px;
+}
+.footer-links > p{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 12px 0px 20px;
+}
+.footer-links > .social-links{
+    background-color: var(--first-color);
+    padding: 0px;
+}
+.footer-links > .social-links > li{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-links > .social-links > li:hover{
+    background-color: var(--hover);
+ }
+.footer-links .social-links-el{
+    fill: var(--white);
+ }
