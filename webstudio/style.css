@@ -98,6 +98,7 @@ ul{
     padding: 12px 30px;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 .features{
     font-family: 'Roboto';
@@ -161,6 +162,24 @@ ul{
 }
 .activities-it{
     width: calc((100% - 60px) /3);
+    position: relative;
+    height: 294px;
+}
+.decorative-div{
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+}
+.decorative-div > p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    margin: 0px;
 }
 .team{
     font-family: 'Roboto';
@@ -239,7 +258,7 @@ ul{
 .customers-li{
     width: 170px;
     height: 92px;
-    border: solid 2px var(--svg-color);
+    border: solid 1px var(--svg-color);
     border-radius: 5px;
 }
 .customers-li:hover{
