@@ -100,9 +100,9 @@ ul{
     margin: 0 auto;
     cursor: pointer;
 }
-/* .no-scroll{
+.no-scroll{
     overflow:hidden;
-} */
+}
 .backdrop{
     position: fixed;
     top: 0;
@@ -182,11 +182,16 @@ ul{
     width:  18px;
     height: 18px;
 }
-.modal-form-el:focus{
+.modal-form-el:focus {
     outline: solid 1px var(--hover);
     border: none;
+    + .input-svg{
+    fill: var(--hover);
+    }  
 }
-
+.modal-form-el:hover{
+    cursor: pointer;
+}
 .modal-form-comment{
     height: 120px;
     border: solid 1px rgba(33, 33, 33, 0.2);
