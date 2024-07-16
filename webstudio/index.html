@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body class="no-scroll">
+    <body>
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
             <symbol id="icon-close-btn" viewBox="0 0 32 32">
@@ -141,12 +141,12 @@
         <header>
             <div class="container">  
                  <div class="header-items"> 
-                    <a class="logo" href=""><span class="decorative-web">Web</span>Studio</a>
+                    <a class="logo" href="#"><span class="decorative-web">Web</span>Studio</a>
                      <div class="nav-ul">
                         <ul class="navigation">        
-                            <li><a href="" class="navigation-el">Cтудія</a></li>
-                            <li><a href="" class="navigation-el">Протфоліо</a></li>
-                            <li><a href="" class="navigation-el">Контакти</a></li>
+                            <li><a href="#" class="navigation-el">Cтудія</a></li>
+                            <li><a href="#" class="navigation-el">Протфоліо</a></li>
+                            <li><a href="#" class="navigation-el">Контакти</a></li>
                         </ul>
                         <ul class="header-address">
                             <li>
@@ -168,6 +168,7 @@
                     <button class="main-button" data-modal-open>
                         Замовити послугу
                     </button>
+                    <div class="no-scroll">
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
                             <button class="close-btn" data-modal-close>
@@ -214,6 +215,7 @@
                         </div>
                         </div>
                     </div>
+                </div>
                 </section>
             <div class="container">
                 <ul class="features">
@@ -414,6 +416,16 @@
                             <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                         </svg></li>
                     </ul> 
+                </div>
+                <div class="footer-sending">
+                    <p>Підпишіться на розсилку</p>
+                    <form class="footer-form">
+                        <input class="footer-input" type="email" placeholder="E-mail" required>
+                        <button class="footer-submit" type="submit">Підписатися</button>
+                            <svg class="send-svg" width="24" height="24">
+                                <use href="#icon-icon-send"></use>
+                            </svg>
+                    </form>
                 </div>
             </div>
         </footer>
