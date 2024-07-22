@@ -62,15 +62,29 @@ ul{
     font-weight: 500;
     color: var(--dark-text);
     text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-el:focus::after{
-    display: block;
+.navigation-el:hover , .navigation-el:focus{
+    color: var(--hover);
+} 
+.navigation-el::after{
+    display: none;
     content: '';
     height: 4px;
     background-color: var(--hover);
     border: none;
     border-radius: 3px;
     margin-top: 29px;
+
+    transition-property: display;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-el:focus::after{
+    display: block;
 }
 .header-address >li:hover{
     .address-el{
@@ -86,14 +100,19 @@ ul{
     font-weight: 500;
     color: var(--grey-text);
     text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-el:hover , .navigation-el:focus{
-    color: var(--hover);
-} 
 .address-svg{
     vertical-align: middle;
     fill: var(--grey-text);
     margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero{
     font-family: 'Roboto';
@@ -159,11 +178,15 @@ ul{
     border-radius: 22px;
     background-color: var(--white);
     margin-left: 490px;
-    padding: 5px 4px;
+    padding: 4px 4px;
 }
 .close-btn-svg{
     width: 18px;
     height: 18px;
+
+    transition-property: fill, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn-svg:hover{
     fill: var(--hover);
@@ -200,6 +223,10 @@ ul{
     border: solid 1px rgba(33, 33, 33, 0.2);
     border-radius: 5px;
     padding: 10px 37px;
+
+    transition-property: outline, border, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-svg{
     position:absolute;
@@ -207,6 +234,10 @@ ul{
     bottom: 10px;
     width:  18px;
     height: 18px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-el:focus {
     outline: solid 1px var(--hover);
@@ -224,6 +255,14 @@ ul{
     border-radius: 5px;
     padding: 10px 15px;
     resize: none;
+
+    transition-property:outline, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-comment:focus{
+    outline: solid 1px var(--hover);
+    border: none;
 }
 .checkbox{
     font-family: 'Roboto';
@@ -382,9 +421,16 @@ ul{
     height: 44px;
     width: 44px;
     border-radius: 30px;
+
+    transition-property:background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links > li:hover{
    background-color: var(--hover);
+   .social-links-el{
+    fill: var(--white);  
+}
 }
 .social-links-el{
     display: block;
@@ -392,9 +438,10 @@ ul{
     height: 20px;
     fill: var(--svg-color); 
     margin: 12px auto;
-}
-.social-links-el:hover{
-    fill: var(--white);  
+
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers{
     padding: 95px 0px;
@@ -417,18 +464,26 @@ ul{
     height: 92px;
     border: solid 1px var(--svg-color);
     border-radius: 5px;
+
+    transition-property: border-color, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-li:hover{
     border-color: var(--hover);
     cursor: pointer;
+    .customers-icons{
+        fill: var(--hover);
+    }
 }
 .customers-icons{
     display: block;
     margin: 20px auto;
     fill: var(--svg-color);
-}
-.customers-icons:hover{
-    fill: var(--hover);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* portfolio */
 .outline{
@@ -453,6 +508,10 @@ ul{
     border-radius: 4px;
     border: none;
     cursor:pointer;
+
+    transition-property: color,  background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .topic-el:hover{
     color: var(--white);
@@ -553,7 +612,8 @@ footer > .container{
  }
 .footer-links .social-links-el{
     fill: var(--white);
- }
+}
+
 .footer-form{
     position: relative;
 }
@@ -570,6 +630,7 @@ footer > .container{
     border: solid 1px rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     margin-right: 6px;
+    padding-left: 15px;
 }
 .footer-submit{
     width: 200px;
