@@ -37,11 +37,7 @@ ul{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    /* margin: 30px 0; */
 }
-/* .header-items:focus-within{
-    margin-bottom: 0px;
-} */
 .nav-ul{
     display: flex;  
     justify-content:space-between;
@@ -50,8 +46,8 @@ ul{
 }
 .navigation , .header-address{
     display: flex;
-    gap: 50px;
-    margin: 30px 0
+    gap: 50px;    
+    /* margin: 30px 0 */
 }
 .navigation:focus-within{
     margin-bottom: 0px;
@@ -71,20 +67,20 @@ ul{
     color: var(--hover);
 } 
 .navigation-el::after{
-    display: none;
+    display: block;
     content: '';
     height: 4px;
-    background-color: var(--hover);
+    background-color:inherit;
     border: none;
     border-radius: 3px;
     margin-top: 29px;
 
-    transition-property: display;
+    transition-property:background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-el:focus::after{
-    display: block;
+    background-color: var(--hover);
 }
 .header-address >li:hover{
     .address-el{
@@ -529,17 +525,48 @@ ul{
     width: calc( (100% - 60px) /3);
     height: 404px;
     margin-bottom: 30px;
-    line-height: 0px;  
+    line-height: 0px; 
+    overflow: hidden; 
 }
 .project-el:hover{
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+    cursor: pointer;    
+    
+    .hover-text{
+    display: block;  
+    animation-name: textAppear;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    }
+    .hover-text > p{
+     opacity: 1;
+    }
+}
+.hover-text{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 294px;
+    background-color:rgba(24, 140, 232, 0.8);
+    line-height: 25px;
+    padding: 63px 24px;
+}
+.hover-text > p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400px;
+    color: var(--white);
+    opacity: 0;
 }
 .project-text{  
     background-color: var(--white);
     border: 1px solid #EEEEEE;
     height: 110px;
     line-height: 15px;
+
+    position: relative;
+    z-index: 1;
 }
 .projects h5{
     font-family: 'Roboto';
@@ -556,27 +583,7 @@ ul{
     color: var(--grey-text);
     padding-left: 24px;
 }
-.hover-text{
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 294px;
-    background-color:rgba(33, 150, 243, 0.9);
-    line-height: 25px;
-    padding: 63px 24px;
-}
-.project-el:hover{
-    .hover-text{
-        display: block;
-    }
-}
-.hover-text > p{
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-weight: 400px;
-    color: var(--white);
-}
+
 footer{
     background-color: var(--first-color);
     color: var(--white);
@@ -650,4 +657,13 @@ footer > .container{
     top: 13px;
     right: 28px;
     fill: var(--white);
+}
+
+@keyframes textAppear{
+    0%{
+        transform: translate(0,100%);
+    }
+    100%{
+        transform: translate(0,0%);
+}
 }
