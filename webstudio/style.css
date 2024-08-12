@@ -21,6 +21,13 @@ ul{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+
+.header-items{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
 .logo{
     font-family: 'Raleway';
     font-weight: 700;
@@ -29,22 +36,16 @@ ul{
     text-decoration: none;
     margin: 30px 0
 }
-.decorative-web{
+.logo-decor-text{
     color: var(--hover);
 }
-
-.header-items{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-.nav-ul{
+.navigation {
     display: flex;  
     justify-content:space-between;
     margin-left: 95px;
     width: 933px;
 }
-.navigation , .header-address{
+.nav-ul, .header-address{
     display: flex;
     gap: 50px;    
     /* margin: 30px 0 */
@@ -127,7 +128,7 @@ ul{
     font-weight: 900;
     text-align: center; 
 }
-.main-button{
+.modal-open-btn{
     background-color: var(--hover);
     color: var(--white);
     font-size: 16px;
@@ -165,9 +166,8 @@ ul{
     min-height: 581px;
     transform: translate(-50% -50%);
     padding-top: 9px;
-
 }
-.close-btn{
+.modal-close-btn{
     width: 30px;
     height: 30px;
     border: solid 2px rgba(0, 0, 0, 0.1);
@@ -224,7 +224,7 @@ ul{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-svg{
+.modal-input-svg{
     position:absolute;
     left: 15px;
     bottom: 10px;
@@ -238,7 +238,7 @@ ul{
 .modal-form-el:focus {
     outline: solid 1px var(--hover);
     border: none;
-    + .input-svg{
+    + .modal-input-svg{
     fill: var(--hover);
     }  
 }
@@ -352,7 +352,7 @@ ul{
     display:flex;
     gap: 30px;
 }
-.activities-it{
+.activities-li{
     width: calc((100% - 60px) /3);
     position: relative;
     height: 294px;
@@ -379,11 +379,11 @@ ul{
     margin-top: 90px;
     padding: 95px 0;
 }
-.team-members{
+.team-container{
     display: flex;
     gap: 30px;
 }
-.team-container{
+.team-members{
     width: calc((100% - 60px) /3);
     box-shadow: 0 2px 2px rgba(117, 117, 117, 0.3) ;
     line-height: 0px; 
@@ -535,12 +535,12 @@ ul{
     .hover-text{
     display: block;  
     animation-name: textAppear;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-direction: alternate;
     }
-    .hover-text > p{
+    /* .hover-text > p{
      opacity: 1;
-    }
+    } */
 }
 .hover-text{
     display: none;
@@ -557,7 +557,7 @@ ul{
     font-size: 18px;
     font-weight: 400px;
     color: var(--white);
-    opacity: 0;
+    /* opacity: 0; */
 }
 .project-text{  
     background-color: var(--white);
@@ -593,8 +593,11 @@ footer{
      margin-top: 24px;
      line-height: 30px;
 }
-footer .navigation-el , footer .logo{
+footer .address-el , footer .logo{
     color: var(--white);
+}
+footer .address-el:hover{
+    color: var(--hover);
 }
 footer > .container{
     display: flex;
